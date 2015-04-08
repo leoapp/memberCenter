@@ -1,0 +1,380 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ss="http://schemas.android.com/apk/res/com.ss.membercenter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:background="#777"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                >
+            <Button 
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="登 录"
+                android:background="@drawable/btn_cricle"
+                android:layout_marginRight="15dp"
+               style="@style/textMiuim"
+                />
+            <Button 
+                 android:layout_marginLeft="15dp"
+                android:text="注 册"
+                android:textColor="#FFF"
+                  android:background="@drawable/btn_alpha_circle_border"
+                   android:layout_width="90dp"
+                android:layout_height="40dp"
+                style="@style/textMiuim"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF"
+            android:orientation="vertical"
+            >
+         <include layout="@layout/grayborderview"/>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                  android:divider="@drawable/graydivider"
+                >
+                <RelativeLayout 
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView 
+                        android:id="@+id/daifukuan"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待付款"
+                        android:textSize="12sp"
+                        android:layout_below="@id/daifukuan"/>
+                </RelativeLayout>
+                <include layout="@layout/vertialbordergray"
+                    />
+                   <RelativeLayout 
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView 
+                        android:id="@+id/daifukuan"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待付款"
+                        android:textSize="12sp"
+                        android:layout_below="@id/daifukuan"/>
+                </RelativeLayout>
+                    <include layout="@layout/vertialbordergray"
+                    />
+                   <RelativeLayout 
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <RelativeLayout 
+                        android:id="@+id/daifukuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView 
+                            android:id="@+id/iv"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        />
+                        <com.ss.view.CustomAlertNumberView 
+                            android:layout_alignRight="@id/iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            ss:number="2"
+                            />
+                    </RelativeLayout>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待付款"
+                        android:textSize="12sp"
+                        android:layout_below="@id/daifukuan"/>
+                </RelativeLayout>
+                    <include layout="@layout/vertialbordergray"
+                    />
+                   <RelativeLayout 
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView 
+                        android:id="@+id/daifukuan"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待付款"
+                        android:textSize="12sp"
+                        android:layout_below="@id/daifukuan"/>
+                </RelativeLayout>
+            </LinearLayout>
+               
+        </LinearLayout>
+        <include layout="@layout/grayborderview"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            >
+               <include layout="@layout/grayborderview"/>
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                >
+                   <RelativeLayout 
+                       android:layout_height="30dp"
+                       android:layout_width="1dp"
+                       android:layout_weight="1"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       android:layout_marginLeft="25dp"
+                       >
+                   <ImageView 
+                       android:id="@+id/iv"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/ic_launcher"
+                       android:scaleType="fitXY"
+                       />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="我的积分"
+                    android:textSize="12sp" />
+
+                </RelativeLayout>
+                <include layout="@layout/vertialbordergray"/>
+                    <RelativeLayout 
+                       android:layout_height="30dp"
+                       android:layout_width="1dp"
+                       android:layout_weight="1"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       android:layout_marginLeft="25dp"
+                       >
+                   <ImageView 
+                       android:id="@+id/iv"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/ic_launcher"
+                       android:scaleType="fitXY"
+                       />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="我的积分"
+                    android:textSize="12sp" />
+
+                </RelativeLayout>
+                
+            </LinearLayout>
+            <include layout="@layout/grayborderview"/>
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                >
+                   <RelativeLayout 
+                       android:layout_height="30dp"
+                       android:layout_width="1dp"
+                       android:layout_weight="1"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       android:layout_marginLeft="25dp"
+                       >
+                   <ImageView 
+                       android:id="@+id/iv"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/ic_launcher"
+                       android:scaleType="fitXY"
+                       />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="我的积分"
+                    android:textSize="12sp" />
+
+                </RelativeLayout>
+                <include layout="@layout/vertialbordergray"/>
+                    <RelativeLayout 
+                       android:layout_height="30dp"
+                       android:layout_width="1dp"
+                       android:layout_weight="1"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       android:layout_marginLeft="25dp"
+                       >
+                   <ImageView 
+                       android:id="@+id/iv"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/ic_launcher"
+                       android:scaleType="fitXY"
+                       />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="我的积分"
+                    android:textSize="12sp" />
+
+                </RelativeLayout>
+               
+            </LinearLayout>
+            
+        </LinearLayout>
+         <include layout="@layout/grayborderview"/>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_margin="12dp"
+            >
+            <include layout="@layout/boldvertialview"
+                android:id="@+id/vi"/>
+            <TextView android:text="购物中心"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/vi"
+                android:paddingLeft="3dp"
+                />
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/grayborderview"/>
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical"
+                >
+                <ImageView 
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_launcher"
+                    android:scaleType="fitXY"
+                    android:id="@+id/iv_flag"
+                    />
+                
+                <TextView android:text="预存款充值"
+                    android:textSize="13sp"
+                    android:layout_toRightOf="@id/iv_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView 
+                    android:src="@drawable/ic_launcher"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+             <include layout="@layout/grayborderview"/>
+                <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical"
+                >
+                <ImageView 
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_launcher"
+                    android:scaleType="fitXY"
+                    android:id="@+id/iv_flag"
+                    />
+                
+                <TextView android:text="预存款充值"
+                    android:textSize="13sp"
+                    android:layout_toRightOf="@id/iv_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView 
+                    android:src="@drawable/ic_launcher"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+             <include layout="@layout/grayborderview"/>
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    
+</ScrollView>
+   
+
+</FrameLayout>
